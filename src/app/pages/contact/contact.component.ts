@@ -1,11 +1,13 @@
 import { Component, inject, signal, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, FormsModule, Validators } from '@angular/forms';
 import { ContactService } from '../../core/services/contact.service';
+import { LucideMail, LucidePhone, LucideMapPin, LucideLink, LucideBriefcase } from '@lucide/angular';
+
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, LucideMail, LucidePhone, LucideMapPin, LucideLink],
   templateUrl: './contact.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./contact.component.scss']

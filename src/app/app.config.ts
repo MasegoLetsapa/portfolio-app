@@ -4,7 +4,7 @@ import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-br
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { provideLucideIcons, LucideBriefcaseBusiness, LucideWrench, LucideDatabase, LucideServer, LucideMonitor, provideLucideConfig } from '@lucide/angular';
+import { provideLucideIcons, LucideCircleCheck, LucideBriefcaseBusiness, LucideWrench, LucideDatabase, LucideServer, LucideMonitor, provideLucideConfig } from '@lucide/angular';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }),
@@ -16,10 +16,11 @@ export const appConfig: ApplicationConfig = {
     LucideWrench,
     LucideDatabase,
     LucideServer,
-    LucideMonitor
+    LucideMonitor,
+    LucideCircleCheck
 
   ),
-provideLucideConfig({ size: 6, color: '#ffffff' }),
+provideLucideConfig({ size: 22, color: '#ffffff' }),
 
   ]
 };
