@@ -18,17 +18,18 @@
           Building enterprise software that solves real business problems using Angular, ASP.NET Core and SQL Server.
         </p>
         <div @fadeAnimation class="flex gap-4 mb-6">
-          <button class="primary-btn">
+          <a class="primary-btn" href="#projects">
             View My Work
-          </button>
-          <button class="secondary-btn">
+          </a>
+          <a class="secondary-btn" href="assets/documents/Masego_Letsapa_CV_v2.pdf" download="Masego_Letsapa_CV.pdf">
             Download CV
-          </button>
+          </a>
         </div>
         <div @slideUpAnimation class="flex gap-4 flex-wrap mb-6">
           @for( badge of badges; track badge.title){
           <button class="flex-shrink-1 tech-badge">
-            <!-- <svg [lucideIcon]="badge.icon"></svg> -->
+            <!-- <svg {{ badge.icon }}></svg> -->
+
             {{ badge.title }}
           </button>
           }

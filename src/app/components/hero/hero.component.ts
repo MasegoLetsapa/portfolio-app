@@ -2,8 +2,13 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { fadeAnimation, slideUpAnimation } from '../../shared/animations';
 import { CounterComponent } from '../../shared/counter/counter.component';
 import { LucideHouse, LucideUser, LucideSettings, LucideBriefcase } from '@lucide/angular';
+import { SiAngularIcon, SiAzureIcon } from '@semantic-icons/lineicons';
+import { LineiconsModule, LineiconsComponent } from '@lineiconshq/angular-lineicons';
+import {
 
 
+
+} from "@lineiconshq/free-icons";
 @Component({
   selector: 'app-hero',
   standalone: true,
@@ -15,15 +20,15 @@ import { LucideHouse, LucideUser, LucideSettings, LucideBriefcase } from '@lucid
 })
 export class HeroComponent {
 
-  readonly LucideHouse = LucideHouse;
+  readonly siAngularIcon = SiAngularIcon;
   readonly LucideUser = LucideUser;
   readonly LucideSettings = LucideSettings;
   readonly LucideBriefcase = LucideBriefcase;
 
   protected readonly badges = [
-    { icon: LucideHouse, title: 'Angular' },
-    { icon: LucideUser, title: '.Net Core' },
-    { icon: LucideSettings, title: 'SQL Server' },
-    { icon: LucideBriefcase, title: 'Azure' }
+    { icon: SiAngularIcon, title: 'Angular' },
+    { icon: SiAngularIcon, title: '.Net Core' },
+    { icon: SiAzureIcon, title: 'SQL Server' },
+    { icon: SiAzureIcon, title: 'Azure' }
   ]
 }
